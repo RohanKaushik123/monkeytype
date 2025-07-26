@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align to the top if content is short */
+            min-height: 100vh; /* Ensure body takes full viewport height */
+        }
+        .container {
+            max-width: 800px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Collapses borders between cells */
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        tr:nth-child(even) { /* Zebra striping for rows */
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd; /* Highlight row on hover */
+        }
+        caption {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Inventory</h1>
+        <table>
+            <caption>Current Stock Levels and Pricing</caption>
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Stock Quantity</th>
+                    <th>Unit Price (INR)</th>
+                    <th>Last Updated</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>P001</td>
+                    <td>Laptop Pro X</td>
+                    <td>Electronics</td>
+                    <td>50</td>
+                    <td>75000</td>
+                    <td>2025-07-25</td>
+                </tr>
+                <tr>
+                    <td>P002</td>
+                    <td>Mechanical Keyboard</td>
+                    <td>Accessories</td>
+                    <td>120</td>
+                    <td>6500</td>
+                    <td>2025-07-24</td>
+                </tr>
+                <tr>
+                    <td>P003</td>
+                    <td>Wireless Mouse</td>
+                    <td>Accessories</td>
+                    <td>200</td>
+                    <td>1200</td>
+                    <td>2025-07-25</td>
+                </tr>
+                <tr>
+                    <td>P004</td>
+                    <td>4K Monitor 27"</td>
+                    <td>Electronics</td>
+                    <td>30</td>
+                    <td>32000</td>
+                    <td>2025-07-23</td>
+                </tr>
+                <tr>
+                    <td>P005</td>
+                    <td>USB-C Hub</td>
+                    <td>Accessories</td>
+                    <td>80</td>
+                    <td>2500</td>
+                    <td>2025-07-24</td>
+                </tr>
+                <tr>
+                    <td>P006</td>
+                    <td>External SSD 1TB</td>
+                    <td>Storage</td>
+                    <td>75</td>
+                    <td>8000</td>
+                    <td>2025-07-25</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Products Listed:</td>
+                    <td>6</td>
+                    <td colspan="2">Data accurate as of 2025-07-26</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
