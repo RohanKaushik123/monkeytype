@@ -1,0 +1,27 @@
+<table border="1">
+  <caption>Employee Information</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Position</th>
+      <th>Department</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Amit Sharma</td>
+      <td>Software Engineer</td>
+      <td>IT</td>
+    </tr>
+    <tr>
+      <td>Priya Mehta</td>
+      <td>HR Manager</td>
+      <td>Human Resources</td>
+    </tr>
+    <tr>
+      <td>Ravi Kumar</td>
+      <td>Accountant</td>
+      <td>Finance</td>
+    </tr>
+  </tbody>
+</table>
