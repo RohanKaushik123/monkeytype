@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Card</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .card {
+      background: white;
+      width: 300px;
+      height: 400px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      text-align: center;
+      padding: 30px 20px;
+      position: relative;
+      animation: floatIn 1.2s ease-out;
+    }
+
+    @keyframes floatIn {
+      from {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .happy {
+      font-size: 28px;
+      color: #ff6ec4;
+      font-weight: bold;
+      animation: popText 1s ease forwards;
+    }
+
+    @keyframes popText {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .message {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #555;
+      animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .balloon {
+      position: absolute;
+      width: 40px;
+      height: 60px;
+      background-color: #ff6ec4;
+      border-radius: 20px 20px 20px 20px;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .balloon::before {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      width: 2px;
+      height: 20px;
+      background: #333;
+      transform: translateX(-50%);
+    }
+
+    .balloon1 {
+      top: 80%;
+      left: 20%;
+      animation-delay: 0s;
+    }
+
+    .balloon2 {
+      top: 90%;
+      left: 60%;
+      background-color: #6ec1ff;
+      animation-delay: 1s;
+    }
+
+    .balloon3 {
+      top: 85%;
+      left: 40%;
+      background-color: #fcd34d;
+      animation-delay: 2s;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-600px);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="happy">🎉 Happy Birthday! 🎂</div>
+    <div class="message">
+      Wishing you a day filled with love, joy, and laughter. <br>
+      Enjoy your special day!
+    </div>
+  </div>
+
+  <!-- Balloons -->
+  <div class="balloon balloon1"></div>
+  <div class="balloon balloon2"></div>
+  <div class="balloon balloon3"></div>
+</body>
+</html>
